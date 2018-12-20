@@ -1,0 +1,62 @@
+// Big Button
+.big-button {
+    background: $normal-blue;
+    border: none;
+    border-bottom: 0.6rem solid darken($normal-blue, 10%);
+    border-radius: 1rem;
+    color: $white-blue;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    outline: none;
+    padding: 2.4rem;
+    transition: all ease 0.3s;
+    width: 100%;
+}
+
+.big-button:hover {
+    background: darken($normal-blue, 6%);
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}
+
+.big-button:disabled:hover {
+    background: $normal-blue;
+}
+
+// Button
+.button {
+    background: $normal-blue;
+    border: none;
+    border-bottom: 0.5rem solid darken($normal-blue, 10%);
+    border-radius: 1rem;
+    color: $white-blue;
+    font-weight: 500;
+    outline: none;
+    padding: $s-size;
+    transition: all ease 0.3s;
+}
+
+.button:hover {
+    background: darken($normal-blue, 6%);
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $light-blue;
+    padding: 0;
+}
+
+.button--link:hover {
+    background: none;
+    color: darken($light-blue, 30%);
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
